@@ -392,6 +392,7 @@ a:hover {
 }
 #ux-steps ul li:nth-child(even) div:nth-child(3) {
   -ms-grid-row: 1;
+      grid-row: 1;
       grid-row-start: 1;
 }
 #ux-steps ul li:nth-child(even) div:nth-child(3) img {
