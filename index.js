@@ -41,9 +41,17 @@ function handleFormSubmit(event) {
     const contactText = document.querySelector("#contact-text")
     const recaptcha = document.querySelector("#recaptcha-checkbox")
 
+    const data = {
+        name: contactName,
+        email: contactEmail,
+        phone: contactTel,
+        website: contactWeb,
+        message: contactText
+    }
+    
     try {
         loading.style.visibility = "visible"
-        console.log(`Name: ${contactName.value}\nE-mail: ${contactEmail.value}\nPhone: ${contactTel.value}\nWebsite: ${contactWeb.value}\nText: ${contactText.value}\n`)
+        console.log(data)
         setTimeout(() => {
             loading.style.visibility = "hidden"
             //Reset
