@@ -42,11 +42,11 @@ function handleFormSubmit(event) {
     const recaptcha = document.querySelector("#recaptcha-checkbox")
 
     const data = {
-        name: contactName,
-        email: contactEmail,
-        phone: contactTel,
-        website: contactWeb,
-        message: contactText
+        name: contactName.value.trim(),
+        email: contactEmail.value.trim(),
+        phone: contactTel.value.trim(),
+        website: contactWeb.value.trim(),
+        message: contactText.value.trim()
     }
     
     try {
